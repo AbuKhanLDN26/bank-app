@@ -13,3 +13,5 @@ for bad in [lambda: acc.deposit(-5), lambda: acc.deposit(0), lambda: acc.withdra
 print(acc.balance) # still 70: failed actions change nothing
 bo = Account("Bo", 50)
 print(bo.balance, acc.balance) # separate objects, separate balances
+
+print(acc.transaction_history())
